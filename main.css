@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: white;
+    max-width: 1200px;
+    margin: auto ;
+    font-family: "Verdana", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 800px;
+    background-color: bisque;
+    background-image: url("/images/beach-small.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.Masterlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+
+}
+
+.rwdlogomain{
+    font-size: 2.75rem;
+
+}
+.rwdlogosecond{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.bogo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+
+.bogo a{
+    margin: 1rem;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+main{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+
+.sogga{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+.sogga p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+footer {
+    height:8rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+
+}
+
+footer p{
+    color: antiquewhite;
+
+}
+
+footer a{
+    color: antiquewhite;
+    
+}
+@media screen and (max-width:1000px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media screen and (max-width:600px) {
+
+    footer{
+        grid-template-columns: 1fr;
+    }
+}
